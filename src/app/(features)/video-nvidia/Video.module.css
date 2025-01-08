@@ -1,0 +1,23 @@
+.videoContainer {
+  @apply relative min-h-[90vh] flex items-center justify-center bg-black bg-opacity-50;
+}
+
+.video {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+.video iframe {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+.texto {
+  @apply relative text-white text-center z-10;
+}
+
+.texto h1 {
+  @apply text-4xl font-bold;
+}
+
+.texto p {
+  @apply mt-4 text-lg;
+}

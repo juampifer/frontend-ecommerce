@@ -1,0 +1,38 @@
+.footer {
+  @apply bg-gray-800 text-white py-8 mt-2;
+}
+
+.container {
+  @apply w-full max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-[1fr_auto] md:grid-rows-[auto_1fr] gap-4;
+}
+
+.logoSection {
+  @apply flex flex-col items-start md:items-start space-y-4 m-3;
+}
+
+
+.logoGeneral {
+  @apply col-span-1 row-start-1 row-end-2 flex justify-end space-x-4;
+}
+
+.store,.twitter, .instagram, .youtube, .linkedin {
+  @apply h-6 w-6 text-white hover:text-black transition;
+}
+
+.listasContainer {
+  @apply grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-16 md:justify-center;
+}
+
+.listas {
+  @apply flex-1 mt-2 space-y-1;
+}
+.listas p {
+  @apply font-bold text-base;
+}
+.listas ul {
+  @apply mt-2 space-y-1 text-xs;
+}
+
+.listas a {
+  @apply block mt-2 text-sm text-white  hover:underline;
+}

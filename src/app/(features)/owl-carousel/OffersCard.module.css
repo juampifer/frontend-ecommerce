@@ -1,0 +1,35 @@
+
+.cardContainer{
+    @apply    w-52 p-4 shadow-sm bg-white border border-gray-400 rounded-lg transition-transform transform hover:scale-105 hover:shadow-lg hover:border-metallicBlue hover:bg-gray-100 flex flex-col justify-between;
+}
+
+.cardImg{
+    @apply rounded-t-lg object-cover h-28 w-full;
+}
+.infoContainer{
+    @apply flex-1 flex flex-col justify-between ;
+}
+
+.cardTitle{
+    @apply mb-2 text-sm text-center font-bold tracking-tight text-gray-900 dark:text-gray-900;
+}
+.cardInfo{
+    @apply mb-3 text-center text-xs font-normal text-gray dark:text-gray-600;
+}
+
+.priceAndButton{
+    @apply flex justify-between items-center mt-2;
+}
+
+.cardPrice{
+    @apply text-xs font-bold line-through text-gray-800;
+}
+
+.cardOfferPrice{
+    @apply text-xs font-bold text-gray-950;
+}
+
+.cardButton{
+    @apply px-3 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800;
+    @apply shadow-sm;
+}

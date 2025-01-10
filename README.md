@@ -6,12 +6,19 @@ Es un carrito de compras básico hecho en NextJS 15, donde se utilizó React con
 
 Una vez clonado el repositorio, se deben seguir los siguientes pasos para ejecutar el server:
 
-```bash
-1) npm install
-2) npm run dev
-```
-
-El primer paso es instalar todas las dependencias del proyecto.
-
-El paso nro 2 ejecuta la aplicación hecha en nextjs, esta se puede visualizar abriendo el navegador en la siguiente dirección:
+1.  Instalar todas las dependencias del proyecto.
+    ```bash
+    npm install
+    ```
+2.	Configura las variables de entorno:
+    Renombra el archivo .env.local.example a .env.local en la raíz del proyecto y configura las variables según tu entorno:
+    ```env
+    MONGO_URI=# URL de la base de datos mongoDB
+    PORT=5000
+    ```
+3.  Ejecuta la aplicación hecha en nextjs:
+    ```bash
+    npm run dev
+    ```
+4. Abre el navegador en la siguiente dirección:
 [http://localhost:3000](http://localhost:3000)

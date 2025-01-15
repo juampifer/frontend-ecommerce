@@ -1,6 +1,6 @@
 
 .navBar {
-  @apply bg-gray-800 text-white p-4 flex items-center justify-between relative;
+  @apply bg-gray-800 text-white p-4 flex items-center justify-between sticky top-0 z-50;
 }
 
 .container{

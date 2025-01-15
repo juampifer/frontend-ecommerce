@@ -8,8 +8,8 @@ import { useSelector } from "react-redux";
 const ProductsPage = () => {
   const { items } = useSelector((state) => state.cart);
   const searchParams = useSearchParams();
-  const categoryId = searchParams.get('categoryId') || ''; // obtengo el parámetro desde la URL
-  const { products, isLoading, error } = useProducts(categoryId);
+  const slug = searchParams.get('category') || ''; // obtengo el parámetro desde la URL
+  const { products, isLoading, error } = useProducts(slug);
 
   return (
     <>

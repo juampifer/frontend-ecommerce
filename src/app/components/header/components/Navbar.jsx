@@ -17,7 +17,7 @@ const Navbar = () => {
   const { items } = useSelector((state) => state.cart);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const searchParams = useSearchParams();
-  const activeCategoryId = searchParams.get('categoryId');
+  const activeCategory = searchParams.get('category');
 
   // Total de ítems en el carrito
   const totalItems = (items || []).reduce((total, item) => total + item.quantity, 0);
@@ -47,9 +47,9 @@ const Navbar = () => {
     categories.map((category) => (
       <li key={category.id}>
         <Link
-          href={`/products?categoryId=${category.id}`}
+          href={`/products?category=${category.slug}`}
           className={`${style} ${
-            activeCategoryId === String(category.id) ? styles.active : ''
+            activeCategory === String(category.slug) ? styles.active : ''
           }`}
         >
           {category.name}

@@ -13,8 +13,8 @@ Una vez clonado el repositorio, se deben seguir los siguientes pasos para ejecut
 2.	Configura las variables de entorno:
     Renombra el archivo .env.local.example a .env.local en la raíz del proyecto y configura las variables según tu entorno:
     ```env
-    MONGO_URI=# URL de la base de datos mongoDB
-    PORT=5000
+    # .env.local
+    NEXT_PUBLIC_API_URL=http://localhost:5000
     ```
 3.  Ejecuta la aplicación hecha en nextjs:
     ```bash
